@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Apply to become a guest technical writer for DevNotes Hub."
+    />
+    <title>Guest Writer Application DevNotes Hub</title>
+  </head>
+  <body>
+    <header>
+      <h1>DevNotes Hub</h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../services.html">Workshops &amp; Guides</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="application.html">Write for Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Guest Writer Application</h2>
+        <p>
+          We welcome clear, beginner-friendly tutorials from developers at every
+          stage. Fill out the form below to pitch your article idea.
+        </p>
+
+        <figure>
+          <img
+            src="../images/workspace.jpeg"
+            alt="Notebook and laptop prepared for drafting a technical tutorial"
+          />
+          <figcaption>
+            Share practical lessons you have tested in your own projects.
+          </figcaption>
+        </figure>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Applicant Details</legend>
+
+            <p>
+              <label for="applicant-name">Full Name:</label>
+              <input
+                type="text"
+                id="applicant-name"
+                name="full_name"
+                required
+                minlength="2"
+                maxlength="60"
+                placeholder="Ada Lovelace"
+              />
+            </p>
+
+            <p>
+              <label for="applicant-email">Email Address:</label>
+              <input
+                type="email"
+                id="applicant-email"
+                name="email"
+                required
+                placeholder="ada@example.com"
+              />
+            </p>
+
+            <p>
+              <label for="applicant-phone">Phone Number:</label>
+              <input
+                type="tel"
+                id="applicant-phone"
+                name="phone"
+                required
+                pattern="[0-9+\-\s]{7,20}"
+                placeholder="+234 800 000 0000"
+              />
+            </p>
+
+            <p>
+              <label for="primary-topic">Primary Writing Topic:</label>
+              <select id="primary-topic" name="primary_topic" required>
+                <option value="" disabled selected>
+                  Choose a primary topic
+                </option>
+                <option value="html_accessibility">
+                  HTML &amp; Web Accessibility
+                </option>
+                <option value="linux_git">
+                  Linux Terminal &amp; Git Workflows
+                </option>
+                <option value="databases_sql">Databases &amp; SQL</option>
+                <option value="career_learning">
+                  Study Habits &amp; Project Breakdowns
+                </option>
+              </select>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Experience Level</legend>
+            <p>
+              <input
+                type="radio"
+                id="exp-beginner"
+                name="experience_level"
+                value="beginner"
+                required
+              />
+              <label for="exp-beginner">Beginner (0–1 year)</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                id="exp-intermediate"
+                name="experience_level"
+                value="intermediate"
+              />
+              <label for="exp-intermediate">Intermediate (1–3 years)</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                id="exp-advanced"
+                name="experience_level"
+                value="advanced"
+              />
+              <label for="exp-advanced">Advanced (3+ years)</label>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              Article Formats You Can Write (Select all that apply)
+            </legend>
+            <p>
+              <input
+                type="checkbox"
+                id="format-tutorial"
+                name="formats"
+                value="step_by_step_tutorial"
+              />
+              <label for="format-tutorial">Step-by-Step Tutorial</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="format-case-study"
+                name="formats"
+                value="project_case_study"
+              />
+              <label for="format-case-study"
+                >Project Breakdown / Case Study</label
+              >
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="format-glossary"
+                name="formats"
+                value="concept_explainer"
+              />
+              <label for="format-glossary">Beginner Concept Explainer</label>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Article Pitch &amp; Agreement</legend>
+            <p>
+              <label for="article-pitch">Short Article Outline:</label><br />
+              <textarea
+                id="article-pitch"
+                name="article_pitch"
+                rows="5"
+                cols="45"
+                required
+                minlength="30"
+                maxlength="500"
+                placeholder="Describe what readers will learn and build in your post..."
+              ></textarea>
+            </p>
+
+            <p>
+              <input
+                type="checkbox"
+                id="editorial-rules"
+                name="agree_rules"
+                value="yes"
+                required
+              />
+              <label for="editorial-rules"
+                >I confirm this pitch is my original work and follows DevNotes
+                Hub accessibility standards.</label
+              >
+            </p>
+          </fieldset>
+
+          <p>
+            <button type="submit">Submit Writer Application</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="../index.html">Return to Home</a> |
+        <a href="../contact.html">Contact Editorial Team</a>
+      </p>
+      <p>&copy; 2026 DevNotes Hub.</p>
+    </footer>
+  </body>
+</html>

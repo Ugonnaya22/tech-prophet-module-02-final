@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Latest articles and audio notes on HTML semantics, accessibility, and web development."
+    />
+    <title>Blog DevNotes Hub</title>
+  </head>
+  <body>
+    <header>
+      <h1>DevNotes Hub</h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Workshops &amp; Guides</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="pages/application.html">Write for Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Latest Articles</h2>
+
+      <article id="post-semantics">
+        <h3>Why Native HTML Elements Beat Generic Divs</h3>
+        <p>
+          Published on <time datetime="2026-11-20">November 20, 2026</time> by
+          Ugonnaya
+        </p>
+        <p>
+          It is tempting to build every interface box out of generic
+          <code>&lt;div&gt;</code> elements, but doing so strips away built-in
+          browser features. Native elements like <code>&lt;button&gt;</code>,
+          <code>&lt;nav&gt;</code>, and <code>&lt;main&gt;</code> give keyboard
+          users and screen readers clear landmarks without extra work.
+        </p>
+        <p>
+          Read the official reference on
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML"
+            >MDN Web Docs: HTML as a basis for accessibility</a
+          >.
+        </p>
+      </article>
+
+      <article id="post-forms">
+        <h3>Five Rules for Accessible Web Forms</h3>
+        <p>
+          Published on <time datetime="2026-11-24">November 24, 2026</time> by
+          Ugonnaya
+        </p>
+        <ol>
+          <li>
+            Always pair every input with an explicit
+            <code>&lt;label for="..."&gt;</code> attribute.
+          </li>
+          <li>
+            Never rely on placeholder text alone as a substitute for a real
+            label.
+          </li>
+          <li>
+            Group related radio buttons and checkboxes inside
+            <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code>.
+          </li>
+          <li>
+            Pick the right input type (<code>email</code>, <code>tel</code>,
+            <code>url</code>, <code>date</code>) so browsers validate properly.
+          </li>
+          <li>Use clear submit button text that describes the action.</li>
+        </ol>
+      </article>
+
+      <section>
+        <h2>Audio Note: Quick Recap on Relative File Paths</h2>
+        <p>
+          Listen to a short audio summary explaining when to use
+          <code>../</code> to move up a directory:
+        </p>
+        <audio controls>
+          <source src="media/podcast-intro.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element. You can
+          <a href="media/podcast-intro.mp3">download the audio note</a>
+          directly.
+        </audio>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="index.html">Home</a> |
+        <a href="pages/application.html">Submit a Guest Post</a>
+      </p>
+      <p>&copy; 2026 DevNotes Hub.</p>
+    </footer>
+  </body>
+</html>
